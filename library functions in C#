@@ -1,0 +1,45 @@
+using System;
+public class Libfun
+{
+    public static bool Prime(int num)
+    {
+        if (num < 2) return false;
+        for (int i = 2; i <= Math.Sqrt(num); i++)
+        {
+            if (num % i == 0) return false;
+        }
+        return true;
+    }
+
+    public static string ReverseString(string input)
+    {
+        char[] arr = input.ToCharArray();
+        Array.Reverse(arr);
+        return new string(arr);
+    }
+
+    public static int Factorial(int n)
+    {
+        if (n == 0 || n == 1) return 1;
+        return n * Factorial(n - 1);
+    }
+
+    public static int Max(int a, int b)
+    {
+        return (a > b) ? a : b;
+    }
+
+    public static double Power(double baseNum, double exponent)
+    {
+        return Math.Pow(baseNum, exponent);
+    }
+
+    public static void Main()
+    {
+        Console.WriteLine("Is 5 prime? " + Prime(5));
+        Console.WriteLine("Reverse of 'hello': " + ReverseString("hello"));
+        Console.WriteLine("Factorial of 5: " + Factorial(5));
+        Console.WriteLine("Max between 10 and 20: " + Max(10, 20));
+        Console.WriteLine("2 raised to power 3: " + Power(2, 3));
+    }
+}
