@@ -1,0 +1,29 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int intValue = 42;
+        long longValue = 1234567890L;
+        short shortValue = 32767;
+        float floatValue = 3.14f;
+        double doubleValue = 3.14159265358979;
+        decimal decimalValue = 19.99m;
+        bool isTrue = true;
+        bool isFalse = false;
+        char character = 'A';
+        string text = "Hello, World!";
+        
+        Console.WriteLine("Integer value: " + intValue);
+        Console.WriteLine("Long value: " + longValue);
+        Console.WriteLine("Short value: " + shortValue);
+        Console.WriteLine("Float value: " + floatValue);
+        Console.WriteLine("Double value: " + doubleValue);
+        Console.WriteLine("Decimal value: " + decimalValue);
+        Console.WriteLine("Boolean value (True): " + isTrue);
+        Console.WriteLine("Boolean value (False): " + isFalse);
+        Console.WriteLine("Character value: " + character);
+        Console.WriteLine("String value: " + text);
+    }
+}
