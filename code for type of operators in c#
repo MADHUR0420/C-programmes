@@ -1,0 +1,76 @@
+using System;
+
+class OperatorsDemo
+{
+    static void Main()
+    {
+        // 1. Arithmetic Operators
+        int a = 10, b = 5;
+        Console.WriteLine("Arithmetic Operators:");
+        Console.WriteLine($"a + b = {a + b}");  // Addition
+        Console.WriteLine($"a - b = {a - b}");  // Subtraction
+        Console.WriteLine($"a * b = {a * b}");  // Multiplication
+        Console.WriteLine($"a / b = {a / b}");  // Division
+        Console.WriteLine($"a % b = {a % b}");  // Modulus (remainder)
+        Console.WriteLine();
+
+        // 2. Unary Operators
+        int num = 10;
+        Console.WriteLine("Unary Operators:");
+        Console.WriteLine($"++num = {++num}");  // Pre-increment
+        Console.WriteLine($"num++ = {num++}");  // Post-increment
+        Console.WriteLine($"--num = {--num}");  // Pre-decrement
+        Console.WriteLine($"num-- = {num--}");  // Post-decrement
+        Console.WriteLine($"-num = {-num}");    // Negation (change sign)
+        Console.WriteLine($"!true = {!true}");   // Logical NOT
+        Console.WriteLine();
+
+        // 3. Logical Operators
+        bool flag1 = true, flag2 = false;
+        Console.WriteLine("Logical Operators:");
+        Console.WriteLine($"flag1 && flag2 = {flag1 && flag2}");  // AND
+        Console.WriteLine($"flag1 || flag2 = {flag1 || flag2}");  // OR
+        Console.WriteLine($"!flag1 = {!flag1}");  // NOT
+        Console.WriteLine();
+
+        // 4. Bitwise Operators
+        int x = 5, y = 3;  // 5 = 0101, 3 = 0011 (binary)
+        Console.WriteLine("Bitwise Operators:");
+        Console.WriteLine($"x & y = {x & y}");  // AND
+        Console.WriteLine($"x | y = {x | y}");  // OR
+        Console.WriteLine($"x ^ y = {x ^ y}");  // XOR
+        Console.WriteLine($"~x = {~x}");        // NOT (bitwise negation)
+        Console.WriteLine($"x << 1 = {x << 1}"); // Left shift
+        Console.WriteLine($"x >> 1 = {x >> 1}"); // Right shift
+        Console.WriteLine();
+
+        // 5. Assignment Operators
+        int z = 20;
+        Console.WriteLine("Assignment Operators:");
+        z += 10;  // z = z + 10
+        Console.WriteLine($"z += 10 -> {z}");
+        z -= 5;   // z = z - 5
+        Console.WriteLine($"z -= 5 -> {z}");
+        z *= 2;   // z = z * 2
+        Console.WriteLine($"z *= 2 -> {z}");
+        z /= 4;   // z = z / 4
+        Console.WriteLine($"z /= 4 -> {z}");
+        z %= 3;   // z = z % 3 (modulo)
+        Console.WriteLine($"z %= 3 -> {z}");
+        Console.WriteLine();
+
+        // 6. Conditional (Ternary) Operator
+        int age = 18;
+        string result = (age >= 18) ? "Adult" : "Minor";
+        Console.WriteLine("Conditional (Ternary) Operator:");
+        Console.WriteLine($"Age {age} is {result}");
+        Console.WriteLine();
+
+        // Demonstrating Combined Operators in a Single Expression
+        Console.WriteLine("Combined Operators Example:");
+        int combinedResult = 10;
+        combinedResult += 5; // combinedResult = 10 + 5
+        combinedResult *= 2; // combinedResult = 15 * 2
+        Console.WriteLine($"combinedResult after += and *=: {combinedResult}");
+    }
+}
